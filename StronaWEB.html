@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Korepetycje Wiktoria Bryla</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lugrasimo&family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="kontener">
+        <img src="D:\OneDrive - Alumbrados Viarios S.A\Pulpit\Strona\banerfota.jpg" alt="Baner">
+        <div class="tekst">
+            <h1>Korepetycje Wiktoria Bryła</h1>
+        </div>
+    </div>
+
+    <div id="naglowki">
+        <ul>
+            <li><a href="#opis">O mnie...</a></li>
+            <li><a href="#opinie">Opinie</a></li>
+            <li><a href="#cennik">Oferta</a></li>
+            <li><a href="#formularz">Kontakt</a></li>
+            <li style="float:center">
+        </ul>
+    </div>
+
+    <div id="opinie">
+        <a class="przycisk" onclick="plusDivs(-1)" id="lewyprzycisk">&#10096;</a>
+        <div id="kontener1">
+        <p id="opinia1" class="op">
+            "Dzięki zajęciach z panią Wiktorią rozwineły się moje umiejenści komunikacji w języku angielskim, Nie tylko
+            polepszyła się moja wymowa, ale i także płynność składania zdań jak i poszerzył się mój zakres słownictwa z
+            różnych dziedzin w języku angielskim."
+
+            <br></br>Uczennica lat 16
+        </p>
+        <p id="opinia2" class="op">
+            "Jestem zadowolony z korepetycji. Prowadzone są w ciekawy sposób. Nauczycielka jest zawsze przygotowana do
+            zajęć, aby przekazać wiedzę w odpowiedni sposób."
+            <br></br>Andrzej Z.
+        </p>
+        <p id="opinia3" class="op">
+            "Nasze lekcje z nauczycielką języka angielskiego to prawdziwa przyjemność! Jej podejście jest cierpliwe i
+            pełne entuzjazmu. Dzięki temu, nauka stała się łatwiejsza i bardziej interesująca. Zdobyłem dużo pewności
+            siebie w mówieniu po angielsku i teraz czuję się pewny podczas rozmów zarówno w pracy, jak i w podróżach.
+            Gorąco polecam!"
+            <br></br>Piotr M.
+        </p>
+    </div>
+        <a class="przycisk" onclick="plusDivs(+1)" id="prawyprzycisk">&#10097;</a>
+
+    </div>
+
+    <script>
+        var slideIndex = 1;
+        showDivs(slideIndex);//wyswietlamy pierwsza opinie
+
+        function plusDivs(n) {
+            showDivs(slideIndex += n);//przejscie do nastepnej lub poprzedniej opinii
+        }
+
+        function showDivs(n)//
+        {
+            var i;
+            var x = document.getElementsByClassName("op");
+            if (n > x.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = 3 }
+            for (i = 0; i < x.length; i++) { x[i].style.display = "none"; }
+            x[slideIndex - 1].style.display = "block";
+        }
+    </script>
+
+    <div id="opis">
+        <div><p style="font-size:35px"><b>Dzień dobry!</b> </p>
+            <p><br>Nazywam się Wiktoria Bryła i jestem nauczycielem języka angielskiego od ponad 30 lat.
+            Organizowane przeze mnie zajęcia indywidualne z języka angielskiego dla dzieci i dorosłych to dynamiczna i
+            przyjemna metoda nauki, dostosowana do indywidualnych potrzeb ucznia. W takiej formie zajęć skupiam się na rozwijaniu umiejętności
+            komunikacyjnych, gramatycznych, słownictwie oraz rozumieniu ze słuchu i czytania.
+            Główne cechy moich indywidualnych lekcji to:
+
+            <br></br><b>1. Indywidualne podejście:</b> Skupiam się wyłącznie na uczniu, dostosowując materiał i tempo
+            nauki do jego umiejętności, poziomu zaawansowania i zainteresowań.
+            <br></br><b>2. Zabawa i motywacja:</b> Staram się tworzyć ciekawe i interaktywne lekcje, które angażują
+            ucznia w różnorodne ćwiczenia, gry, role-play i zadania, aby nauka była przyjemnością.
+            <br></br><b>3. Konwersacje i wymowa:</b> Zapewniam liczne okazje do praktyki mówienia, a także skupiam się
+            na poprawności wymowy i akcentu.
+            <br></br><b>4. Słuchanie i czytanie ze zrozumieniem:</b> Wprowadzam różnorodne materiały, takie jak
+            audiobooki, filmy, artykuły prasowe czy fragmenty książek, aby rozwijać umiejętność słuchania i czytania ze
+            zrozumieniem.
+            <br></br><b>5. Pisanie i gramatyka:</b> Poprawiam umiejętności pisania poprzez różnego rodzaju zadania,
+            takie jak listy, opowiadania czy eseje, jednocześnie skupiając się na rozwijaniu gramatyki.
+            <br></br><b>6. Korekta i feedback:</b> Dokładnie analizuje i koryguje błędy ucznia, jednocześnie podając
+            szczegółową opinię zwrotną, która pomaga w rozwoju językowym.
+            <br></br><b>7. Dostosowanie tematyki:</b> Staram się dostosować tematykę zajęć do zainteresowań ucznia, aby
+            zachęcić go do nauki i sprawić, że zajęcia będą bardziej angażujące.
+
+            <br><br>Jeśli jesteś gotowy na przygodę z językiem angielskim i chcesz zdobyć pewność siebie w jego używaniu,
+            zapraszam Cię do wspólnej nauki. Razem odkryjemy, jak język angielski może otworzyć przed Tobą wiele nowych
+            drzwi.
+            <br>
+            <br>Nie mogę się doczekać, aby poznać Cię i rozpocząć tę wspaniałą podróż razem!
+            <br><br> <p style="font-size:20px" class="ladnaCzcionka"> Wiktoria Bryła</p></p></div>      
+        <div id="zdjecie"><img src="D:\OneDrive - Alumbrados Viarios S.A\Pulpit\Strona\wiktoria_bryla.jpg" alt="WiktoriaBryla"></div>
+    </div>
+    <div id="kontener2">
+<div id="cennik">
+        <h2>CENNIK</h2>
+        <p>Indywidualne lekcje online:
+            <br></br>45 min: 60 zł
+            <br></br>60 min: 80 zł
+            <br></br>Grupowe korepetycje online (2-4 uczniów):
+            <br></br>45 min: 60 zł
+            <br></br>60 min: 80 zł
+            <br></br>Indywidualne koreptetycje twarzą w twarz:
+            <br></br>45 min: 60 zł
+            <br></br>60 min: 80 zł
+            <br></br>Grupowe korepetycje twarzą w twarz (2-4 uczniów):
+            <br></br>45 min: 60 zł
+            <br></br>60 min: 80 zł
+        </p>
+    </div>
+<img src="D:\OneDrive - Alumbrados Viarios S.A\Pulpit\Strona\mem.jpg" alt="Mem">
+    </div>
+    
+    <div id="formularz">
+        <h2>Napisz do mnie</h2>
+        <div class="kontenerFormularza">
+            <form onsubmit="sendEmail()">
+                <label>Telefon kontaktowy</label>
+                <br></br>
+                <input type="phone" id="Telefon" placeholder="Twój nr telefonu" required>
+                <br></br>
+                <label>Imię i nazwisko</label>
+                <br></br>
+                <input type="text" id="Imieinazwisko" placeholder="Twoje imię i nazwisko" required>
+                <br></br>
+                <label>Email</label>
+                <br></br>
+                <input type="email" id="Email" placeholder="Twój email" required>
+                <br></br>
+                <label>Wiadomość</label>
+                <br></br>
+                <textarea name="Wiadomość"></textarea>
+                <br></br>
+                <input type="submit" value="Wyślij">
+            </form>
+
+            <div id="daneKontaktowe">
+                <h3>mgr Wiktoria Bryła
+                    <br />tel. +48 503492517
+                    <br />email: wiktoria.bryla@gmail.com
+                </h3>
+                <i class="fa fa-whatsapp" style="font-size:36px"></i>
+                <i class="fa fa-linkedin-square" style="font-size:36px"></i>
+            </div>
+        </div>
+    </div>
+    <script>src = "https://smtpjs.com/v3/smtp.js"</script>
+    <script>
+        function sendEmail() {
+            Email.send({
+                Host: "smtp.elasticemail.com",
+                Username: "username",
+                Password: "password",
+                To: 'them@website.com',
+                From: "you@isp.com",
+                Subject: "This is the subject",
+                Body: "And this is the body"
+            }).then(
+                message => alert(message)
+            );
+        }
+    </script>
+</body>
+</DOCTYPE>
